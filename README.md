@@ -1,7 +1,10 @@
 # javaNjavascriptQ
 
 **1. JAVA **
+
 A. Create an array with the values (1, 2, 3, 4, 5, 6, 7) and shuffle it. 
+
+//
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -9,22 +12,24 @@ import java.util.List;
 
 public class ShuffleArray {
     public static void main(String[] args) {
-        // Create an array with the values (1, 2, 3, 4, 5, 6, 7)
+        
         Integer[] originalArray = {1, 2, 3, 4, 5, 6, 7};
 
-        // Convert the array to a list to shuffle it
+         
         List<Integer> list = Arrays.asList(originalArray);
 
-        // Shuffle the list
+        
         Collections.shuffle(list);
 
-        // Convert the shuffled list back to an array
+         
         Integer[] shuffledArray = list.toArray(new Integer[0]);
 
-        // Print the shuffled array
+        
         System.out.println(Arrays.toString(shuffledArray));
     }
 }
+
+//
 
 B. Enter a Roman Number as input and convert it to an integer. (ex IX = 9) .
 
