@@ -167,29 +167,31 @@ console.log("Reversed Sentence: " + reversedSentence);
 B. Perform sorting of an array in descending order.
 
 function bubbleSortDescending(arr) {
-    const n = arr.length;
-    let swapped;
+  const len = arr.length;
+  let swapped;
 
-    do {
-        swapped = false;
-        for (let i = 0; i < n - 1; i++) {
-            if (arr[i] < arr[i + 1]) {
-                // Swap the elements if they are out of order
-                const temp = arr[i];
-                arr[i] = arr[i + 1];
-                arr[i + 1] = temp;
-                swapped = true;
-            }
-        }
-    } while (swapped);
+  do {
+    swapped = false;
 
-    return arr;
+    for (let i = 0; i < len - 1; i++) {
+      if (arr[i] < arr[i + 1]) {
+        // Swap the elements
+        const temp = arr[i];
+        arr[i] = arr[i + 1];
+        arr[i + 1] = temp;
+        swapped = true;
+      }
+    }
+  } while (swapped);
+
+  return arr;
 }
 
-// Example usage:
-const originalArray = [5, 2, 9, 1, 5, 6];
-const sortedArray = bubbleSortDescending(originalArray);
-console.log("Sorted Array in Descending Order:", sortedArray);
+const numbers = [5, 2, 9, 1, 5, 6];
+const sortedDescending = bubbleSortDescending(numbers);
+
+console.log(sortedDescending); // Output: [9, 6, 5, 5, 2, 1]
+
 
 
  
