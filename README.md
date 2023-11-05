@@ -11,5 +11,6 @@ A. Take a sentence as an input and reverse every word in that sentence.
 a. Example - This is a sunny day > shiT si a ynnus yad. 
 B. Perform sorting of an array in descending order.
 
-![Screenshot 2023-11-01 164308](https://github.com/badhanco/javaNjavascriptQ/assets/97171186/4b3d0e6d-6b67-44ae-b44d-4bff357fe0fb)
+ ![Uploading Screenshot 2023-11-02 175912.png…]()
+
 ![Screenshot 2023-11-02 111035](https://github.com/badhanco/javaNjavascriptQ/assets/97171186/0d2b909e-aaf1-4123-a5e9-9b056d4e211a)
