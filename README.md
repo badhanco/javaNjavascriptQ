@@ -4,20 +4,34 @@
 
 A. Create an array with the values (1, 2, 3, 4, 5, 6, 7) and shuffle it. 
 
+       import java.util.Random;
+
+public class ShuffleArray {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5, 6, 7};
+        shuffleArray(arr);
         
-        Integer[] originalArray = {1, 2, 3, 4, 5, 6, 7};
-
-         
-        List<Integer> list = Arrays.asList(originalArray);
-
+        // Print the shuffled array
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+    }
+    
+    public static void shuffleArray(int[] arr) {
+        int n = arr.length;
+        Random rand = new Random();
         
-        Collections.shuffle(list);
+        for (int i = n - 1; i > 0; i--) {
+            int j = rand.nextInt(i + 1); // Generate a random index between 0 and i inclusive.
+            
+            // Swap arr[i] and arr[j]
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+    }
+}
 
-         
-        Integer[] shuffledArray = list.toArray(new Integer[0]);
-
-        
-        System.out.println(Arrays.toString(shuffledArray));
     
 
 
