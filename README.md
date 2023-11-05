@@ -23,8 +23,7 @@ A. Create an array with the values (1, 2, 3, 4, 5, 6, 7) and shuffle it.
 
 B. Enter a Roman Number as input and convert it to an integer. (ex IX = 9) .
 
-public class RomanToInteger {
-    public static int romanToInt(String s) {
+
         int result = 0;
         int prevValue = 0;
 
@@ -62,15 +61,14 @@ public class RomanToInteger {
                 return 1000;
             default:
                 return 0; // Handling invalid characters, you can modify this behavior if needed.
-        }
-    }
+        
 
     public static void main(String[] args) {
         String romanNumeral = "IX"; // Change this to the Roman numeral you want to convert
         int integerEquivalent = romanToInt(romanNumeral);
         System.out.println("The integer equivalent of " + romanNumeral + " is: " + integerEquivalent);
     }
-}
+
 
 
 C. Check if the input is pangram or not. (Pangram is a sentence that contains all the alphabet
