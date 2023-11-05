@@ -4,8 +4,6 @@
 
 A. Create an array with the values (1, 2, 3, 4, 5, 6, 7) and shuffle it. 
 
-public class ShuffleArray {
-    public static void main(String[] args) {
         
         Integer[] originalArray = {1, 2, 3, 4, 5, 6, 7};
 
@@ -20,8 +18,7 @@ public class ShuffleArray {
 
         
         System.out.println(Arrays.toString(shuffledArray));
-    }
-}
+    
 
 
 B. Enter a Roman Number as input and convert it to an integer. (ex IX = 9) .
